@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap-fill | Making Suggestions</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <video id="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="card">
+    <h1>Gap-fill: Seasons & Weather</h1>
+  
+    <p class="instructions">
+      Type the missing word or phrase in each blank. Hover the <strong>?</strong> for a hint,  
+      then click <em>Check&nbsp;your&nbsp;score</em> to see how you did.
+    </p>
+  
+    <p>
+      — What’s your favorite season?<br>
+      — I love
+      <span class="blank" data-answer="spring">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">весна</span>
+      </span>!
+      The weather is
+      <span class="blank" data-answer="mild">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">мягкий</span>
+      </span>,
+      and everything is
+      <span class="blank" data-answer="blooming">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">цветёт (в данный момент)</span>
+      </span>.
+      <br><br>
+      — I like
+      <span class="blank" data-answer="autumn">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">осень</span>
+      </span>.
+      The leaves are
+      <span class="blank" data-answer="withering">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">увядают (прямо сейчас)</span>
+      </span>,
+      and we are
+      <span class="blank" data-answer="harvesting">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">собираем урожай</span>
+      </span>
+      from the garden.
+      <br><br>
+      — What about
+      <span class="blank" data-answer="winter">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">зима</span>
+      </span>?<br>
+      — Oh, it’s too
+      <span class="blank" data-answer="cold">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">холодно</span>
+      </span>
+      and
+      <span class="blank" data-answer="frosty">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">морозно</span>
+      </span>! It’s
+      <span class="blank" data-answer="snowing">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">идёт снег (сейчас)</span>
+      </span>
+      outside. I want summer!
+    </p>
+  </div>  
+  
+    <button id="check">Check your score</button>
+  </div>  
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>📝 Your Results</h2>
+      <p id="modal-text"></p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
